@@ -20,7 +20,7 @@ If we make it through all the checks, the objects are equal, so we can return tr
 Note that this function only works for objects and not for other data types such as arrays or primitive values. If you need to perform a deep equal check on other types, you'll need to modify the function accordingly.
 */
 
-function deepEqual(obj1: object, obj2: object): boolean {
+function deepEqual(obj1: Record<string, any>, obj2: Record<string, any>): boolean {
   // Check if the objects are strictly equal
   if (obj1 === obj2) {
     return true;
@@ -56,7 +56,6 @@ function deepEqual(obj1: object, obj2: object): boolean {
   // If we made it through all the checks, the objects are equal
   return true;
 }
-
 
 // Test case 1: Two objects with different values
 const obj1 = { name: 'John', age: 30 };
