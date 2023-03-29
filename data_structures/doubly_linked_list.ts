@@ -129,11 +129,20 @@ class DoublyLinkedList {
 }
 
 // Example usage
+console.log("Creating a new doubly linked list");
 const myList = new DoublyLinkedList();
-myList.addAtHead(1); // list is now [1]
-myList.addAtTail(3); // list is now [1, 3]
-myList.addAtHead(2); // list is now [2, 1, 3]
-myList.deleteAtIndex(1); // list is now [2, 3]
+console.log("Adding 1 to the head of the list");
+myList.addAtHead(1);
+console.log("Expected output: [1], Actual output: ", myList);
+console.log("Adding 3 to the tail of the list");
+myList.addAtTail(3);
+console.log("Expected output: [1, 3], Actual output: ", myList);
+console.log("Adding 2 to the head of the list");
+myList.addAtHead(2);
+console.log("Expected output: [2, 1, 3], Actual output: ", myList);
+console.log("Deleting the node at index 1");
+myList.deleteAtIndex(1);
+console.log("Expected output: [2, 3], Actual output: ", myList);
 
 
 
