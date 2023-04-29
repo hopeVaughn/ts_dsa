@@ -122,3 +122,13 @@ class BinarySearchTree {
     return data;
   }
 }
+
+const binaryTree = new BinarySearchTree();
+binaryTree.insert(10);
+binaryTree.insert(5);
+binaryTree.insert(13);
+binaryTree.insert(11);
+binaryTree.insert(2);
+binaryTree.insert(16);
+binaryTree.insert(7);
+console.log(binaryTree);
